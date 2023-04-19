@@ -1,0 +1,36 @@
+/*
+Written by:
+    Dhruv Bhagwat
+    ens22dbt@cs.umu.se
+    SRM Institute of Science and Technology
+*/
+
+
+Instructions for excecution of files:
+
+
+For parallel implementation:
+
+    We compile the files using:  
+            
+            mpicc -o nqueen nqueen.c
+
+    We then run the excecutable using: 
+            
+            mpirun -n (number of cores) ./nqueen
+
+(The parallel implementation does not prompt to enter the value of n, after excecution, enter n and the program will run.)
+
+
+
+
+For serial implementation:
+
+    We compile the files using:  
+
+            gcc -o nqueen-serial nqueen_serial.c
+
+    We then run the excecutable using: 
+
+            ./nqueen_serial
+
